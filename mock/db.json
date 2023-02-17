@@ -1,0 +1,2838 @@
+{
+  "contract": [
+    {
+      "id": "f59e6407-af21-4501-b9f8-add49c210446",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "APTV",
+      "holderId": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+      "holderCode": "5Y",
+      "holderAirlineCode2": "5Y",
+      "holderName": "Atlas Air, Inc.",
+      "counterpartyId": "8311dc80-db94-454d-bc11-586d25366fee",
+      "counterpartyCode": "440979",
+      "counterpartyAirlineCode2": null,
+      "counterpartyName": "Dfs Gmbh",
+      "customers": "5Y,PO",
+      "transactionType": {
+        "id": "BUY",
+        "value": 1,
+        "description": "Contract holder buys",
+        "name": "BUY"
+      },
+      "agreementType": {
+        "id": "TERM",
+        "description": "Term contract",
+        "name": "TERM",
+        "value": 1
+      },
+      "validityPeriod": {
+        "from": "2017-01-01",
+        "to": "2019-01-31"
+      },
+      "creditTerm": {
+        "type": {
+          "id": "OC",
+          "name": "OC",
+          "description": "Open credit",
+          "value": 1
+        },
+        "reference": {
+          "id": "ID",
+          "value": 1,
+          "name": "ID",
+          "description": "Invoice date"
+        },
+        "netTerms": 30
+      },
+      "paymentTerm": {
+        "currency": "EUR",
+        "forex": {
+          "aggregation": {
+            "id": "MONTHLY_TRADING_DAYS",
+            "name": "Monthly traded",
+            "implemented": true,
+            "allowedFrequencies": [
+              {
+                "id": "DAILY",
+                "value": 1,
+                "name": "Daily",
+                "code": "DC"
+              },
+              {
+                "id": "WEEKDAY",
+                "value": 2,
+                "name": "Weekday",
+                "code": "DT"
+              },
+              {
+                "id": "MONTHLY",
+                "value": 6,
+                "name": "Monthly",
+                "code": "MT"
+              }
+            ],
+            "value": 6,
+            "code": "MT"
+          },
+          "financialSourceId": "6d9b5807-2e88-44ec-9c48-74221a932ae0",
+          "financialSourceCode": "OANDA",
+          "offset": {
+            "id": "PREVIOUS",
+            "value": -1,
+            "name": "-1",
+            "description": "Previous"
+          }
+        },
+        "invoiceFrequency": {
+          "id": "M30",
+          "value": 1,
+          "description": "Monthly",
+          "name": "M30"
+        },
+        "invoiceType": {
+          "id": "EH",
+          "value": 1,
+          "description": "Electronic invoice",
+          "name": "EH"
+        },
+        "paymentType": {
+          "id": "HC",
+          "description": "Headquarter payment",
+          "name": "HC",
+          "value": 1
+        },
+        "paymentComment": null
+      },
+      "costGroups": "APT",
+      "scopes": "FRA,LEJ,NUE,STR",
+      "selfReporting": false,
+      "draft": true,
+      "status": {
+        "id": "DRAFT"
+      },
+      "counterparty": {
+        "id": "1b7e760f-e523-4270-a97b-437b516b1ed0",
+        "version": 0,
+        "userCreated": "ibalint@fuelplu",
+        "userModified": "ibalint@fuelplu",
+        "dateCreated": "2023-02-13 00:00",
+        "dateModified": "2023-02-13 00:00",
+        "code": "DLH",
+        "name": "Deutsche Lufthansa",
+        "supplierCode2": null,
+        "supplierCode3": null,
+        "isContractHolder": true,
+        "isCounterParty": true,
+        "isAviationAuthority": false,
+        "isAirportOperator": false,
+        "isBroker": false,
+        "isCustomer": true,
+        "isIntoPlaneAgent": false,
+        "isSupplier": false,
+        "isAirline": true,
+        "isGroundHandler": false,
+        "doAccounting": false,
+        "validityPeriod": {
+          "from": "2007-01-01",
+          "to": "2023-02-13"
+        },
+        "isUsedInForecast": false,
+        "isSystem": false,
+        "clientCode": null,
+        "airlineCode2": "DL",
+        "airlineCode3": "DLH",
+        "companyGroupCode": null,
+        "companyGroupId": null,
+        "contactCount": 1
+      },
+      "holder": {
+        "id": "9c21db2e-0f57-4027-a4e4-f74b0b21f0ca",
+        "version": null,
+        "userCreated": null,
+        "userModified": null,
+        "dateCreated": null,
+        "dateModified": null,
+        "code": "NS",
+        "name": "NS-TEST",
+        "supplierCode2": "NS",
+        "supplierCode3": "NSS",
+        "airlineCode2": "NS",
+        "airlineCode3": "NSS"
+      }
+    },
+    {
+      "id": "5506916a-1f16-4680-8a60-92ad0e01c964",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "APT476",
+      "holderId": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+      "holderCode": "5Y",
+      "holderAirlineCode2": "5Y",
+      "holderName": "Atlas Air, Inc.",
+      "counterpartyId": "2aa2fbba-7687-4ab4-b9f6-204a6ab11cfb",
+      "counterpartyCode": "353801",
+      "counterpartyAirlineCode2": null,
+      "counterpartyName": "Fraport Ag",
+      "customers": "5Y,PO",
+      "transactionType": {
+        "id": "BUY",
+        "value": 1,
+        "description": "Contract holder buys",
+        "name": "BUY"
+      },
+      "agreementType": {
+        "id": "TERM",
+        "description": "Term contract",
+        "name": "TERM",
+        "value": 1
+      },
+      "validityPeriod": {
+        "from": "2017-01-01",
+        "to": "2099-12-31"
+      },
+      "creditTerm": {
+        "type": {
+          "id": "OC",
+          "name": "OC",
+          "description": "Open credit",
+          "value": 1
+        },
+        "reference": {
+          "id": "ID",
+          "value": 1,
+          "name": "ID",
+          "description": "Invoice date"
+        },
+        "netTerms": 7
+      },
+      "paymentTerm": {
+        "currency": "EUR",
+        "forex": {
+          "aggregation": {
+            "id": "MONTHLY_TRADING_DAYS",
+            "name": "Monthly traded",
+            "implemented": true,
+            "allowedFrequencies": [
+              {
+                "id": "DAILY",
+                "value": 1,
+                "name": "Daily",
+                "code": "DC"
+              },
+              {
+                "id": "WEEKDAY",
+                "value": 2,
+                "name": "Weekday",
+                "code": "DT"
+              },
+              {
+                "id": "MONTHLY",
+                "value": 6,
+                "name": "Monthly",
+                "code": "MT"
+              }
+            ],
+            "value": 6,
+            "code": "MT"
+          },
+          "financialSourceId": "6d9b5807-2e88-44ec-9c48-74221a932ae0",
+          "financialSourceCode": "OANDA",
+          "offset": {
+            "id": "PREVIOUS",
+            "value": -1,
+            "name": "-1",
+            "description": "Previous"
+          }
+        },
+        "invoiceFrequency": {
+          "id": "M30",
+          "value": 1,
+          "description": "Monthly",
+          "name": "M30"
+        },
+        "invoiceType": {
+          "id": "EH",
+          "value": 1,
+          "description": "Electronic invoice",
+          "name": "EH"
+        },
+        "paymentType": {
+          "id": "HC",
+          "description": "Headquarter payment",
+          "name": "HC",
+          "value": 1
+        },
+        "paymentComment": null
+      },
+      "costGroups": "APT",
+      "scopes": "FRA",
+      "selfReporting": false,
+      "draft": true,
+      "status": {
+        "id": "DRAFT"
+      }
+    },
+    {
+      "code": "TEST2023",
+      "id": "ijAfrwA",
+      "counterparty": {
+        "id": "0715a9d0-f3a1-4b76-bcde-feb9cec2fa79",
+        "version": 0,
+        "userCreated": "1",
+        "userModified": null,
+        "dateCreated": "2022-03-15 00:00",
+        "dateModified": null,
+        "code": "DG",
+        "name": "Starbroker Ltd",
+        "supplierCode2": null,
+        "supplierCode3": null,
+        "isContractHolder": false,
+        "isCounterParty": true,
+        "isAviationAuthority": false,
+        "isAirportOperator": false,
+        "isBroker": false,
+        "isCustomer": true,
+        "isIntoPlaneAgent": false,
+        "isSupplier": false,
+        "isAirline": true,
+        "isGroundHandler": false,
+        "doAccounting": false,
+        "validityPeriod": {
+          "from": "2017-09-01",
+          "to": "2099-12-31"
+        },
+        "isUsedInForecast": false,
+        "isSystem": false,
+        "clientCode": "5Y",
+        "airlineCode2": "DG",
+        "airlineCode3": "DGF",
+        "companyGroupCode": null,
+        "companyGroupId": null,
+        "contactCount": 0
+      },
+      "holder": {
+        "id": "c1458c87-6028-4232-a94b-047528ef76e3",
+        "version": null,
+        "userCreated": null,
+        "userModified": null,
+        "dateCreated": null,
+        "dateModified": null,
+        "code": "PO",
+        "name": "Polar Air Cargo Worldwide, Inc.",
+        "supplierCode2": "PO",
+        "supplierCode3": "PO",
+        "airlineCode2": "PO",
+        "airlineCode3": "PO"
+      }
+    },
+    {
+      "code": "TEST with ",
+      "counterparty": {
+        "id": 1,
+        "code": "DLH",
+        "name": "Lufthansa"
+      },
+      "id": "L2zrzI3"
+    },
+    {
+      "code": "testwithco",
+      "counterparty": {
+        "id": 1,
+        "code": "DLH",
+        "name": "Lufthansa"
+      },
+      "id": "lpO8Af7"
+    }
+  ],
+  "counterparty": [
+    {
+      "id": "0715a9d0-f3a1-4b76-bcde-feb9cec2fa79",
+      "version": 0,
+      "userCreated": "1",
+      "userModified": null,
+      "dateCreated": "2022-03-15 00:00",
+      "dateModified": null,
+      "code": "DG",
+      "name": "Starbroker Ltd",
+      "supplierCode2": null,
+      "supplierCode3": null,
+      "isContractHolder": false,
+      "isCounterParty": true,
+      "isAviationAuthority": false,
+      "isAirportOperator": false,
+      "isBroker": false,
+      "isCustomer": true,
+      "isIntoPlaneAgent": false,
+      "isSupplier": false,
+      "isAirline": true,
+      "isGroundHandler": false,
+      "doAccounting": false,
+      "validityPeriod": {
+        "from": "2017-09-01",
+        "to": "2099-12-31"
+      },
+      "isUsedInForecast": false,
+      "isSystem": false,
+      "clientCode": "5Y",
+      "airlineCode2": "DG",
+      "airlineCode3": "DGF",
+      "companyGroupCode": null,
+      "companyGroupId": null,
+      "contactCount": 0
+    },
+    {
+      "id": "1b7e760f-e523-4270-a97b-437b516b1ed0",
+      "version": 0,
+      "userCreated": "ibalint@fuelplu",
+      "userModified": "ibalint@fuelplu",
+      "dateCreated": "2023-02-13 00:00",
+      "dateModified": "2023-02-13 00:00",
+      "code": "DLH",
+      "name": "Deutsche Lufthansa",
+      "supplierCode2": null,
+      "supplierCode3": null,
+      "isContractHolder": true,
+      "isCounterParty": true,
+      "isAviationAuthority": false,
+      "isAirportOperator": false,
+      "isBroker": false,
+      "isCustomer": true,
+      "isIntoPlaneAgent": false,
+      "isSupplier": false,
+      "isAirline": true,
+      "isGroundHandler": false,
+      "doAccounting": false,
+      "validityPeriod": {
+        "from": "2007-01-01",
+        "to": "2023-02-13"
+      },
+      "isUsedInForecast": false,
+      "isSystem": false,
+      "clientCode": null,
+      "airlineCode2": "DL",
+      "airlineCode3": "DLH",
+      "companyGroupCode": null,
+      "companyGroupId": null,
+      "contactCount": 1
+    },
+    {
+      "id": "5cc19be8-f214-433f-b612-60a28e701438",
+      "version": 0,
+      "userCreated": "dpopa",
+      "userModified": "lpeter@fuelplus",
+      "dateCreated": "2022-08-11 00:00",
+      "dateModified": "2023-01-11 00:00",
+      "code": "DPC",
+      "name": "DP company",
+      "supplierCode2": null,
+      "supplierCode3": null,
+      "isContractHolder": false,
+      "isCounterParty": false,
+      "isAviationAuthority": false,
+      "isAirportOperator": false,
+      "isBroker": false,
+      "isCustomer": true,
+      "isIntoPlaneAgent": false,
+      "isSupplier": false,
+      "isAirline": true,
+      "isGroundHandler": false,
+      "doAccounting": false,
+      "validityPeriod": {
+        "from": "2020-01-01",
+        "to": "2099-01-01"
+      },
+      "isUsedInForecast": false,
+      "isSystem": false,
+      "clientCode": null,
+      "airlineCode2": "DP",
+      "airlineCode3": "DPC",
+      "companyGroupCode": null,
+      "companyGroupId": null,
+      "contactCount": 0
+    },
+    {
+      "id": "f2ead2c4-8a8f-4283-928b-2e3eaf5dfcfc",
+      "version": 0,
+      "userCreated": "1",
+      "userModified": "dp@fuelplus.com",
+      "dateCreated": "2022-03-15 00:00",
+      "dateModified": "2023-01-20 00:00",
+      "code": "DX",
+      "name": "Dhl Express",
+      "supplierCode2": null,
+      "supplierCode3": null,
+      "isContractHolder": false,
+      "isCounterParty": true,
+      "isAviationAuthority": false,
+      "isAirportOperator": false,
+      "isBroker": false,
+      "isCustomer": true,
+      "isIntoPlaneAgent": false,
+      "isSupplier": false,
+      "isAirline": true,
+      "isGroundHandler": false,
+      "doAccounting": false,
+      "validityPeriod": {
+        "from": "2008-03-01",
+        "to": "2099-12-31"
+      },
+      "isUsedInForecast": false,
+      "isSystem": false,
+      "clientCode": null,
+      "airlineCode2": "DX",
+      "airlineCode3": "DX",
+      "companyGroupCode": null,
+      "companyGroupId": null,
+      "contactCount": 0
+    },
+    {
+      "id": "6a557cfe-4937-4e31-9194-a34d64c2164a",
+      "version": 0,
+      "userCreated": "1",
+      "userModified": null,
+      "dateCreated": "2022-03-15 00:00",
+      "dateModified": null,
+      "code": "DZ",
+      "name": "Danzas Aei",
+      "supplierCode2": null,
+      "supplierCode3": null,
+      "isContractHolder": false,
+      "isCounterParty": true,
+      "isAviationAuthority": false,
+      "isAirportOperator": false,
+      "isBroker": false,
+      "isCustomer": true,
+      "isIntoPlaneAgent": false,
+      "isSupplier": false,
+      "isAirline": true,
+      "isGroundHandler": false,
+      "doAccounting": false,
+      "validityPeriod": {
+        "from": "2007-01-01",
+        "to": "2018-12-31"
+      },
+      "isUsedInForecast": false,
+      "isSystem": false,
+      "clientCode": "5Y",
+      "airlineCode2": "DZ",
+      "airlineCode3": "DZ",
+      "companyGroupCode": null,
+      "companyGroupId": null,
+      "contactCount": 0
+    }
+  ],
+  "holder": [
+    {
+      "id": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "5Y",
+      "name": "Atlas Air, Inc.",
+      "supplierCode2": "5Y",
+      "supplierCode3": "5Y",
+      "airlineCode2": "5Y",
+      "airlineCode3": "5Y"
+    },
+    {
+      "id": "9c21db2e-0f57-4027-a4e4-f74b0b21f0ca",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "NS",
+      "name": "NS-TEST",
+      "supplierCode2": "NS",
+      "supplierCode3": "NSS",
+      "airlineCode2": "NS",
+      "airlineCode3": "NSS"
+    },
+    {
+      "id": "c1458c87-6028-4232-a94b-047528ef76e3",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "PO",
+      "name": "Polar Air Cargo Worldwide, Inc.",
+      "supplierCode2": "PO",
+      "supplierCode3": "PO",
+      "airlineCode2": "PO",
+      "airlineCode3": "PO"
+    },
+    {
+      "id": "16d6acf6-5caa-41b1-b436-ef91b9bee0c7",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "SOO",
+      "name": "Southern Air",
+      "supplierCode2": null,
+      "supplierCode3": "SOO",
+      "airlineCode2": "9S",
+      "airlineCode3": "SOO"
+    },
+    {
+      "id": "7c9c0e30-9002-496d-9fb2-420884e3ebf5",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "YKK",
+      "name": "test company IB",
+      "supplierCode2": null,
+      "supplierCode3": null,
+      "airlineCode2": "YK",
+      "airlineCode3": "YKK"
+    }
+  ],
+  "priceComponent": [
+    {
+      "id": "e9eec081-29fd-40e2-b440-c653e82522ed",
+      "version": 0,
+      "userCreated": "dkumar",
+      "userModified": "dp@fuelplus.com",
+      "dateCreated": "2022-04-25 14:06",
+      "dateModified": "2023-02-08 14:37",
+      "contract": {
+        "id": "0c08631e-3ad1-4fa7-b358-4c9a70af13ca",
+        "version": 0,
+        "userCreated": "dkumar",
+        "userModified": "dp@fuelplus.com",
+        "dateCreated": "2022-04-25 14:04",
+        "dateModified": "2023-02-08 14:37",
+        "code": "510316",
+        "holder": {
+          "id": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+          "version": null,
+          "userCreated": null,
+          "userModified": null,
+          "dateCreated": null,
+          "dateModified": null,
+          "code": "5Y",
+          "name": "Atlas Air, Inc.",
+          "supplierCode2": "5Y",
+          "supplierCode3": "5Y",
+          "isContractHolder": true,
+          "isCounterParty": true,
+          "isAviationAuthority": false,
+          "isAirportOperator": false,
+          "isBroker": false,
+          "isCustomer": true,
+          "isIntoPlaneAgent": true,
+          "isSupplier": true,
+          "isAirline": true,
+          "isGroundHandler": true,
+          "doAccounting": true,
+          "validityPeriod": {
+            "from": "2007-01-01",
+            "to": "2099-12-31"
+          },
+          "isUsedInForecast": null,
+          "isSystem": false,
+          "client": null,
+          "airlineCode2": "5Y",
+          "airlineCode3": "5Y",
+          "companyGroup": null,
+          "portalRefId": null
+        },
+        "counterparty": {
+          "id": "c37282fc-ec84-41d3-89e8-1fa5192d363d",
+          "version": null,
+          "userCreated": null,
+          "userModified": null,
+          "dateCreated": null,
+          "dateModified": null,
+          "code": "510316",
+          "name": "Atlantic Charleston",
+          "supplierCode2": null,
+          "supplierCode3": null,
+          "isContractHolder": false,
+          "isCounterParty": true,
+          "isAviationAuthority": false,
+          "isAirportOperator": false,
+          "isBroker": false,
+          "isCustomer": false,
+          "isIntoPlaneAgent": false,
+          "isSupplier": false,
+          "isAirline": false,
+          "isGroundHandler": true,
+          "doAccounting": false,
+          "validityPeriod": {
+            "from": "2010-01-01",
+            "to": "2099-12-31"
+          },
+          "isUsedInForecast": null,
+          "isSystem": false,
+          "client": null,
+          "airlineCode2": null,
+          "airlineCode3": null,
+          "companyGroup": null,
+          "portalRefId": null
+        },
+        "customers": [
+          {
+            "id": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+            "version": null,
+            "userCreated": null,
+            "userModified": null,
+            "dateCreated": null,
+            "dateModified": null,
+            "code": "5Y",
+            "name": "Atlas Air, Inc.",
+            "supplierCode2": "5Y",
+            "supplierCode3": "5Y",
+            "isContractHolder": true,
+            "isCounterParty": true,
+            "isAviationAuthority": false,
+            "isAirportOperator": false,
+            "isBroker": false,
+            "isCustomer": true,
+            "isIntoPlaneAgent": true,
+            "isSupplier": true,
+            "isAirline": true,
+            "isGroundHandler": true,
+            "doAccounting": true,
+            "validityPeriod": {
+              "from": "2007-01-01",
+              "to": "2099-12-31"
+            },
+            "isUsedInForecast": null,
+            "isSystem": false,
+            "client": null,
+            "airlineCode2": "5Y",
+            "airlineCode3": "5Y",
+            "companyGroup": null,
+            "portalRefId": null
+          }
+        ],
+        "transactionType": {
+          "id": "BUY",
+          "value": 1,
+          "description": "Contract holder buys",
+          "name": "BUY"
+        },
+        "agreementType": {
+          "id": "TERM",
+          "description": "Term contract",
+          "name": "TERM",
+          "value": 1
+        },
+        "validityPeriod": {
+          "from": "2021-01-02",
+          "to": "2023-02-20"
+        },
+        "creditTerm": {
+          "type": {
+            "id": "OC",
+            "name": "OC",
+            "description": "Open credit",
+            "value": 1
+          },
+          "reference": {
+            "id": "ID",
+            "value": 1,
+            "name": "ID",
+            "description": "Invoice date"
+          },
+          "netTerms": 0
+        },
+        "paymentTerm": {
+          "currency": "USD",
+          "forex": {
+            "aggregation": {
+              "id": "MONTHLY_TRADING_DAYS",
+              "name": "Monthly traded",
+              "implemented": true,
+              "allowedFrequencies": [
+                {
+                  "id": "DAILY",
+                  "value": 1,
+                  "name": "Daily",
+                  "code": "DC"
+                },
+                {
+                  "id": "WEEKDAY",
+                  "value": 2,
+                  "name": "Weekday",
+                  "code": "DT"
+                },
+                {
+                  "id": "MONTHLY",
+                  "value": 6,
+                  "name": "Monthly",
+                  "code": "MT"
+                }
+              ],
+              "value": 6,
+              "code": "MT"
+            },
+            "financialSource": {
+              "id": "6d9b5807-2e88-44ec-9c48-74221a932ae0",
+              "version": null,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "sourceCode": "OANDA",
+              "isSourceStandard": false,
+              "name": null,
+              "comments": null,
+              "currency": null,
+              "defaultAggregationMethod": null,
+              "validity": null
+            },
+            "offset": {
+              "id": "PREVIOUS",
+              "value": -1,
+              "name": "-1",
+              "description": "Previous"
+            }
+          },
+          "invoiceFrequency": {
+            "id": "D1",
+            "value": 3,
+            "description": "Daily",
+            "name": "D/1"
+          },
+          "invoiceType": {
+            "id": "EH",
+            "value": 1,
+            "description": "Electronic invoice",
+            "name": "EH"
+          },
+          "paymentType": {
+            "id": "HC",
+            "description": "Headquarter payment",
+            "name": "HC",
+            "value": 1
+          },
+          "paymentComment": null
+        },
+        "costGroups": [
+          {
+            "id": "43e007be-f630-42e7-8d84-bdde9da09d61",
+            "version": 0,
+            "userCreated": "gti",
+            "userModified": "dpopa",
+            "dateCreated": "2022-03-15 12:26",
+            "dateModified": "2022-11-07 10:18",
+            "code": "GH",
+            "name": "Ground Handling"
+          }
+        ],
+        "scopes": [
+          {
+            "location": {
+              "id": "fb75725a-6af5-41eb-856e-89f3c9bed937",
+              "version": 0,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "locationCode": "CHS",
+              "name": "Charleston Afb/Intl/",
+              "code3": "CHS",
+              "code4": "KCHS",
+              "adminUser": null,
+              "isAirportFlag": null,
+              "validityPeriod": null,
+              "hasSupplyChainFlag": null,
+              "country": null,
+              "subCountry": null,
+              "county": null,
+              "city": null,
+              "timeserie": null,
+              "timezoneName": null,
+              "latitude": null,
+              "longitude": null,
+              "defaultQuantityUnit": null,
+              "defaultDensity": null,
+              "defaultDensityMassUnit": null,
+              "defaultDensityVolumeUnit": null
+            },
+            "country": null
+          }
+        ],
+        "selfReporting": false,
+        "draft": false,
+        "responsible": null,
+        "status": {
+          "id": "EFFECTIVE"
+        }
+      },
+      "name": "Garbage Removal",
+      "category": {
+        "id": "e8843ab4-bbe4-4846-ac19-2f7accf00a87",
+        "version": 0,
+        "userCreated": "dkumar",
+        "userModified": "dkumar",
+        "dateCreated": "2022-04-25 14:07",
+        "dateModified": "2022-04-25 14:07",
+        "code": "GarbageRemoval",
+        "name": "Garbage Removal",
+        "type": {
+          "id": "GROUND_HANDLING",
+          "value": "Ground handling"
+        },
+        "costGroup": {
+          "id": "43e007be-f630-42e7-8d84-bdde9da09d61",
+          "version": 0,
+          "userCreated": "gti",
+          "userModified": "dpopa",
+          "dateCreated": "2022-03-15 12:26",
+          "dateModified": "2022-11-07 10:18",
+          "code": "GH",
+          "name": "Ground Handling"
+        },
+        "accounts": [],
+        "templates": [],
+        "validity": {
+          "from": "2010-01-01",
+          "to": "2099-12-31"
+        },
+        "businessUnit": null
+      },
+      "currency": "USD",
+      "forex": {
+        "aggregation": {
+          "id": "MONTHLY_TRADING_DAYS",
+          "name": "Monthly traded",
+          "implemented": true,
+          "allowedFrequencies": [
+            {
+              "id": "DAILY",
+              "value": 1,
+              "name": "Daily",
+              "code": "DC"
+            },
+            {
+              "id": "WEEKDAY",
+              "value": 2,
+              "name": "Weekday",
+              "code": "DT"
+            },
+            {
+              "id": "MONTHLY",
+              "value": 6,
+              "name": "Monthly",
+              "code": "MT"
+            }
+          ],
+          "value": 6,
+          "code": "MT"
+        },
+        "financialSource": {
+          "id": "6d9b5807-2e88-44ec-9c48-74221a932ae0",
+          "version": null,
+          "userCreated": null,
+          "userModified": null,
+          "dateCreated": null,
+          "dateModified": null,
+          "sourceCode": "OANDA",
+          "isSourceStandard": false,
+          "name": null,
+          "comments": null,
+          "currency": null,
+          "defaultAggregationMethod": null,
+          "validity": null
+        },
+        "offset": {
+          "id": "PREVIOUS",
+          "value": -1,
+          "name": "-1",
+          "description": "Previous"
+        }
+      },
+      "continuous": true,
+      "billingPoint": {
+        "id": "ANY"
+      },
+      "validity": {
+        "from": "2021-01-02",
+        "to": "2023-02-19"
+      },
+      "definitions": [
+        {
+          "id": "1187c867-ba2d-4b00-822e-6e173fddb9da",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-02-08 14:37",
+          "dateModified": "2023-02-08 14:37",
+          "rate": {
+            "name": "Garbage Removal"
+          },
+          "calculation": {
+            "measure": {
+              "id": "GROUND_RECORD",
+              "hasUnit": true,
+              "unitType": {
+                "id": "GRH",
+                "name": "GRH",
+                "description": "Ground handling service unit",
+                "value": 11
+              },
+              "value": "Handling service",
+              "type": {
+                "id": "HANDLING",
+                "value": "Ground handling"
+              },
+              "hasRounding": true,
+              "description": "Used to calculate a cost for a given actual ground event (service)"
+            },
+            "unit": {
+              "id": "fb323c94-d3f0-4856-ac8b-0ac610e868b5",
+              "version": null,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "code": "PEV",
+              "name": "Per Event",
+              "type": {
+                "id": "GRH",
+                "name": "GRH",
+                "description": "Ground handling service unit",
+                "value": 11
+              },
+              "factor": null,
+              "validity": null
+            },
+            "rounding": null,
+            "factor": 1,
+            "ponderationPower": 1,
+            "multipliers": [],
+            "basedOn": []
+          },
+          "conditions": [
+            {
+              "measure": {
+                "id": "PAYLOAD_TYPE",
+                "value": "Payload type",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's payload type",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "C",
+              "value2": null
+            },
+            {
+              "measure": {
+                "id": "FLIGHT_PARKING_TIME",
+                "value": "Parking time",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies the parking time (duration)",
+                "hasUnit": true,
+                "measureInputType": {
+                  "id": "INPUT"
+                },
+                "hasBaseTime": false,
+                "unitType": {
+                  "id": "DUR",
+                  "name": "Dur",
+                  "description": "Duration",
+                  "value": 6
+                }
+              },
+              "unit": {
+                "id": "e29065ae-8ae1-4bc2-810c-7802d6f7fa56",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "DY",
+                "name": "Days",
+                "type": {
+                  "id": "DUR",
+                  "name": "Dur",
+                  "description": "Duration",
+                  "value": 6
+                },
+                "factor": null,
+                "validity": null
+              },
+              "timeBasis": {
+                "id": "LOCAL_TIME",
+                "value": "Local time"
+              },
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "10",
+              "value2": null
+            }
+          ],
+          "parameters": [
+            {
+              "type": {
+                "id": "QUANTITY_FILTER",
+                "value": "Quantity filter"
+              },
+              "measure": {
+                "id": "AIRCRAFT_MGLW",
+                "hasUnit": true,
+                "unitType": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "value": "Aircraft MLGW",
+                "type": {
+                  "id": "AIRCRAFT",
+                  "value": "Aircraft"
+                },
+                "hasRounding": true,
+                "description": "Specifies the Maximum Landing Gross Weight of the aircraft used to operate the flight"
+              },
+              "unit": {
+                "id": "017952e2-4e4a-4dbf-bf52-b4d95fc7a30b",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "KG",
+                "name": "Kilograms",
+                "type": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "factor": null,
+                "validity": null
+              },
+              "rounding": null,
+              "start": null,
+              "limit": null
+            }
+          ],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-02",
+                "to": "2023-02-19"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Garbage Removal"
+                  },
+                  "amount": 310
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "priceTiers": [
+        {
+          "id": "8f020814-8162-4e1e-bec3-6668bb71b265",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-01-19 12:31",
+          "dateModified": "2023-01-19 12:31",
+          "name": "QFA Management",
+          "conditions": [
+            {
+              "measure": {
+                "id": "CUSTOMER_REPORTED",
+                "value": "Customer (reported)",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's customer entity (reported)",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "QFA",
+              "value2": null
+            }
+          ],
+          "parameters": [],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-01",
+                "to": "2023-03-19"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Management Fee"
+                  },
+                  "amount": 5000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7fc8076-81f9-4f58-b34b-8a586c6f83f8",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-01-19 12:31",
+          "dateModified": "2023-01-19 12:31",
+          "name": "QFA Everyone",
+          "conditions": [
+            {
+              "measure": {
+                "id": "CUSTOMER_REPORTED",
+                "value": "Customer (reported)",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's customer entity (reported)",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "NOT_EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "!=",
+                "name": "Not equal"
+              },
+              "value": "QFA",
+              "value2": null
+            }
+          ],
+          "parameters": [],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-01",
+                "to": "2023-03-19"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Management Fee"
+                  },
+                  "amount": 9000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [],
+      "draft": false,
+      "validDefinitions": [
+        {
+          "id": "1187c867-ba2d-4b00-822e-6e173fddb9da",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-02-08 14:37",
+          "dateModified": "2023-02-08 14:37",
+          "rate": {
+            "name": "Garbage Removal"
+          },
+          "calculation": {
+            "measure": {
+              "id": "GROUND_RECORD",
+              "hasUnit": true,
+              "unitType": {
+                "id": "GRH",
+                "name": "GRH",
+                "description": "Ground handling service unit",
+                "value": 11
+              },
+              "value": "Handling service",
+              "type": {
+                "id": "HANDLING",
+                "value": "Ground handling"
+              },
+              "hasRounding": true,
+              "description": "Used to calculate a cost for a given actual ground event (service)"
+            },
+            "unit": {
+              "id": "fb323c94-d3f0-4856-ac8b-0ac610e868b5",
+              "version": null,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "code": "PEV",
+              "name": "Per Event",
+              "type": {
+                "id": "GRH",
+                "name": "GRH",
+                "description": "Ground handling service unit",
+                "value": 11
+              },
+              "factor": null,
+              "validity": null
+            },
+            "rounding": null,
+            "factor": 1,
+            "ponderationPower": 1,
+            "multipliers": [],
+            "basedOn": [],
+            "validMultipliers": []
+          },
+          "conditions": [
+            {
+              "measure": {
+                "id": "PAYLOAD_TYPE",
+                "value": "Payload type",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's payload type",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "C",
+              "value2": null
+            },
+            {
+              "measure": {
+                "id": "FLIGHT_PARKING_TIME",
+                "value": "Parking time",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies the parking time (duration)",
+                "hasUnit": true,
+                "measureInputType": {
+                  "id": "INPUT"
+                },
+                "hasBaseTime": false,
+                "unitType": {
+                  "id": "DUR",
+                  "name": "Dur",
+                  "description": "Duration",
+                  "value": 6
+                }
+              },
+              "unit": {
+                "id": "e29065ae-8ae1-4bc2-810c-7802d6f7fa56",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "DY",
+                "name": "Days",
+                "type": {
+                  "id": "DUR",
+                  "name": "Dur",
+                  "description": "Duration",
+                  "value": 6
+                },
+                "factor": null,
+                "validity": null
+              },
+              "timeBasis": {
+                "id": "LOCAL_TIME",
+                "value": "Local time"
+              },
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "10",
+              "value2": null
+            }
+          ],
+          "parameters": [
+            {
+              "type": {
+                "id": "QUANTITY_FILTER",
+                "value": "Quantity filter"
+              },
+              "measure": {
+                "id": "AIRCRAFT_MGLW",
+                "hasUnit": true,
+                "unitType": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "value": "Aircraft MLGW",
+                "type": {
+                  "id": "AIRCRAFT",
+                  "value": "Aircraft"
+                },
+                "hasRounding": true,
+                "description": "Specifies the Maximum Landing Gross Weight of the aircraft used to operate the flight"
+              },
+              "unit": {
+                "id": "017952e2-4e4a-4dbf-bf52-b4d95fc7a30b",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "KG",
+                "name": "Kilograms",
+                "type": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "factor": null,
+                "validity": null
+              },
+              "rounding": null,
+              "start": null,
+              "limit": null
+            }
+          ],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-02",
+                "to": "2023-02-19"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Garbage Removal"
+                  },
+                  "amount": 310
+                }
+              ]
+            }
+          ],
+          "validConditions": [
+            {
+              "measure": {
+                "id": "PAYLOAD_TYPE",
+                "value": "Payload type",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's payload type",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "C",
+              "value2": null
+            },
+            {
+              "measure": {
+                "id": "FLIGHT_PARKING_TIME",
+                "value": "Parking time",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies the parking time (duration)",
+                "hasUnit": true,
+                "measureInputType": {
+                  "id": "INPUT"
+                },
+                "hasBaseTime": false,
+                "unitType": {
+                  "id": "DUR",
+                  "name": "Dur",
+                  "description": "Duration",
+                  "value": 6
+                }
+              },
+              "unit": {
+                "id": "e29065ae-8ae1-4bc2-810c-7802d6f7fa56",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "DY",
+                "name": "Days",
+                "type": {
+                  "id": "DUR",
+                  "name": "Dur",
+                  "description": "Duration",
+                  "value": 6
+                },
+                "factor": null,
+                "validity": null
+              },
+              "timeBasis": {
+                "id": "LOCAL_TIME",
+                "value": "Local time"
+              },
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "10",
+              "value2": null
+            }
+          ],
+          "validParameters": [
+            {
+              "type": {
+                "id": "QUANTITY_FILTER",
+                "value": "Quantity filter"
+              },
+              "measure": {
+                "id": "AIRCRAFT_MGLW",
+                "hasUnit": true,
+                "unitType": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "value": "Aircraft MLGW",
+                "type": {
+                  "id": "AIRCRAFT",
+                  "value": "Aircraft"
+                },
+                "hasRounding": true,
+                "description": "Specifies the Maximum Landing Gross Weight of the aircraft used to operate the flight"
+              },
+              "unit": {
+                "id": "017952e2-4e4a-4dbf-bf52-b4d95fc7a30b",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "KG",
+                "name": "Kilograms",
+                "type": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "factor": null,
+                "validity": null
+              },
+              "rounding": null,
+              "start": null,
+              "limit": null
+            }
+          ]
+        }
+      ],
+      "validPriceTiers": [],
+      "validConditions": [],
+      "status": {
+        "id": "EFFECTIVE"
+      }
+    },
+    {
+      "id": "3c4df2de-b5ac-411a-abfe-f0dea9a6d160",
+      "version": 0,
+      "userCreated": "dkumar",
+      "userModified": "dp@fuelplus.com",
+      "dateCreated": "2022-05-15 16:06",
+      "dateModified": "2023-01-19 12:31",
+      "contract": {
+        "id": "0c08631e-3ad1-4fa7-b358-4c9a70af13ca",
+        "version": 0,
+        "userCreated": "dkumar",
+        "userModified": "dp@fuelplus.com",
+        "dateCreated": "2022-05-15 16:00",
+        "dateModified": "2023-01-19 12:31",
+        "code": "513537-CKG",
+        "holder": {
+          "id": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+          "version": null,
+          "userCreated": null,
+          "userModified": null,
+          "dateCreated": null,
+          "dateModified": null,
+          "code": "5Y",
+          "name": "Atlas Air, Inc.",
+          "supplierCode2": "5Y",
+          "supplierCode3": "5Y",
+          "isContractHolder": true,
+          "isCounterParty": true,
+          "isAviationAuthority": false,
+          "isAirportOperator": false,
+          "isBroker": false,
+          "isCustomer": true,
+          "isIntoPlaneAgent": true,
+          "isSupplier": true,
+          "isAirline": true,
+          "isGroundHandler": true,
+          "doAccounting": true,
+          "validityPeriod": {
+            "from": "2007-01-01",
+            "to": "2099-12-31"
+          },
+          "isUsedInForecast": null,
+          "isSystem": false,
+          "client": null,
+          "airlineCode2": "5Y",
+          "airlineCode3": "5Y",
+          "companyGroup": null,
+          "portalRefId": null
+        },
+        "counterparty": {
+          "id": "d4bfe817-3934-43b5-9a18-b4c1f65a1b4d",
+          "version": null,
+          "userCreated": null,
+          "userModified": null,
+          "dateCreated": null,
+          "dateModified": null,
+          "code": "513537",
+          "name": "Megacap Aviation Service Co., Ltd",
+          "supplierCode2": null,
+          "supplierCode3": null,
+          "isContractHolder": false,
+          "isCounterParty": true,
+          "isAviationAuthority": false,
+          "isAirportOperator": false,
+          "isBroker": false,
+          "isCustomer": false,
+          "isIntoPlaneAgent": false,
+          "isSupplier": false,
+          "isAirline": false,
+          "isGroundHandler": true,
+          "doAccounting": false,
+          "validityPeriod": {
+            "from": "2010-01-01",
+            "to": "2099-12-31"
+          },
+          "isUsedInForecast": null,
+          "isSystem": false,
+          "client": null,
+          "airlineCode2": null,
+          "airlineCode3": null,
+          "companyGroup": null,
+          "portalRefId": null
+        },
+        "customers": [
+          {
+            "id": "739ea1e2-e72f-4a72-bc3a-c85ec5f74274",
+            "version": null,
+            "userCreated": null,
+            "userModified": null,
+            "dateCreated": null,
+            "dateModified": null,
+            "code": "5Y",
+            "name": "Atlas Air, Inc.",
+            "supplierCode2": "5Y",
+            "supplierCode3": "5Y",
+            "isContractHolder": true,
+            "isCounterParty": true,
+            "isAviationAuthority": false,
+            "isAirportOperator": false,
+            "isBroker": false,
+            "isCustomer": true,
+            "isIntoPlaneAgent": true,
+            "isSupplier": true,
+            "isAirline": true,
+            "isGroundHandler": true,
+            "doAccounting": true,
+            "validityPeriod": {
+              "from": "2007-01-01",
+              "to": "2099-12-31"
+            },
+            "isUsedInForecast": null,
+            "isSystem": false,
+            "client": null,
+            "airlineCode2": "5Y",
+            "airlineCode3": "5Y",
+            "companyGroup": null,
+            "portalRefId": null
+          },
+          {
+            "id": "c1458c87-6028-4232-a94b-047528ef76e3",
+            "version": null,
+            "userCreated": null,
+            "userModified": null,
+            "dateCreated": null,
+            "dateModified": null,
+            "code": "PO",
+            "name": "Polar Air Cargo Worldwide, Inc.",
+            "supplierCode2": "PO",
+            "supplierCode3": "PO",
+            "isContractHolder": true,
+            "isCounterParty": true,
+            "isAviationAuthority": false,
+            "isAirportOperator": false,
+            "isBroker": false,
+            "isCustomer": true,
+            "isIntoPlaneAgent": false,
+            "isSupplier": true,
+            "isAirline": true,
+            "isGroundHandler": false,
+            "doAccounting": true,
+            "validityPeriod": {
+              "from": "2007-01-01",
+              "to": "2099-12-31"
+            },
+            "isUsedInForecast": null,
+            "isSystem": false,
+            "client": null,
+            "airlineCode2": "PO",
+            "airlineCode3": "PO",
+            "companyGroup": null,
+            "portalRefId": null
+          }
+        ],
+        "transactionType": {
+          "id": "BUY",
+          "value": 1,
+          "description": "Contract holder buys",
+          "name": "BUY"
+        },
+        "agreementType": {
+          "id": "TERM",
+          "description": "Term contract",
+          "name": "TERM",
+          "value": 1
+        },
+        "validityPeriod": {
+          "from": "2021-01-01",
+          "to": "2023-03-20"
+        },
+        "creditTerm": {
+          "type": {
+            "id": "OC",
+            "name": "OC",
+            "description": "Open credit",
+            "value": 1
+          },
+          "reference": {
+            "id": "ID",
+            "value": 1,
+            "name": "ID",
+            "description": "Invoice date"
+          },
+          "netTerms": 30
+        },
+        "paymentTerm": {
+          "currency": "CNY",
+          "forex": {
+            "aggregation": {
+              "id": "MONTHLY_TRADING_DAYS",
+              "name": "Monthly traded",
+              "implemented": true,
+              "allowedFrequencies": [
+                {
+                  "id": "DAILY",
+                  "value": 1,
+                  "name": "Daily",
+                  "code": "DC"
+                },
+                {
+                  "id": "WEEKDAY",
+                  "value": 2,
+                  "name": "Weekday",
+                  "code": "DT"
+                },
+                {
+                  "id": "MONTHLY",
+                  "value": 6,
+                  "name": "Monthly",
+                  "code": "MT"
+                }
+              ],
+              "value": 6,
+              "code": "MT"
+            },
+            "financialSource": {
+              "id": "6d9b5807-2e88-44ec-9c48-74221a932ae0",
+              "version": null,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "sourceCode": "OANDA",
+              "isSourceStandard": false,
+              "name": null,
+              "comments": null,
+              "currency": null,
+              "defaultAggregationMethod": null,
+              "validity": null
+            },
+            "offset": {
+              "id": "PREVIOUS",
+              "value": -1,
+              "name": "-1",
+              "description": "Previous"
+            }
+          },
+          "invoiceFrequency": {
+            "id": "M30",
+            "value": 1,
+            "description": "Monthly",
+            "name": "M30"
+          },
+          "invoiceType": {
+            "id": "EH",
+            "value": 1,
+            "description": "Electronic invoice",
+            "name": "EH"
+          },
+          "paymentType": {
+            "id": "HC",
+            "description": "Headquarter payment",
+            "name": "HC",
+            "value": 1
+          },
+          "paymentComment": null
+        },
+        "costGroups": [
+          {
+            "id": "43e007be-f630-42e7-8d84-bdde9da09d61",
+            "version": 0,
+            "userCreated": "gti",
+            "userModified": "dpopa",
+            "dateCreated": "2022-03-15 12:26",
+            "dateModified": "2022-11-07 10:18",
+            "code": "GH",
+            "name": "Ground Handling"
+          }
+        ],
+        "scopes": [
+          {
+            "location": {
+              "id": "b2ce83bd-6c6b-4ae2-8496-d45c7a7fe5dd",
+              "version": 0,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "locationCode": "CKG",
+              "name": "Jiangbei",
+              "code3": "CKG",
+              "code4": "ZUCK",
+              "adminUser": null,
+              "isAirportFlag": null,
+              "validityPeriod": null,
+              "hasSupplyChainFlag": null,
+              "country": null,
+              "subCountry": null,
+              "county": null,
+              "city": null,
+              "timeserie": null,
+              "timezoneName": null,
+              "latitude": null,
+              "longitude": null,
+              "defaultQuantityUnit": null,
+              "defaultDensity": null,
+              "defaultDensityMassUnit": null,
+              "defaultDensityVolumeUnit": null
+            },
+            "country": null
+          }
+        ],
+        "selfReporting": false,
+        "draft": false,
+        "responsible": null,
+        "status": {
+          "id": "EFFECTIVE"
+        }
+      },
+      "name": "Management Fee",
+      "category": {
+        "id": "311a0c1e-68b4-433b-9900-78fb6cb8b18a",
+        "version": 0,
+        "userCreated": "gti",
+        "userModified": "gti",
+        "dateCreated": "2022-03-15 12:27",
+        "dateModified": "2022-03-15 12:27",
+        "code": "MGMTFEE",
+        "name": "Management Fee",
+        "type": {
+          "id": "GROUND_HANDLING",
+          "value": "Ground handling"
+        },
+        "costGroup": {
+          "id": "43e007be-f630-42e7-8d84-bdde9da09d61",
+          "version": 0,
+          "userCreated": "gti",
+          "userModified": "dpopa",
+          "dateCreated": "2022-03-15 12:26",
+          "dateModified": "2022-11-07 10:18",
+          "code": "GH",
+          "name": "Ground Handling"
+        },
+        "accounts": [],
+        "templates": [],
+        "validity": {
+          "from": "2021-12-30",
+          "to": null
+        },
+        "businessUnit": null
+      },
+      "currency": {
+        "currencyCode": "EUR",
+        "numericCode": 978,
+        "defaultFractionDigits": 2
+      },
+      "forex": {
+        "aggregation": {
+          "id": "MONTHLY_TRADING_DAYS",
+          "name": "Monthly traded",
+          "implemented": true,
+          "allowedFrequencies": [
+            {
+              "id": "DAILY",
+              "value": 1,
+              "name": "Daily",
+              "code": "DC"
+            },
+            {
+              "id": "WEEKDAY",
+              "value": 2,
+              "name": "Weekday",
+              "code": "DT"
+            },
+            {
+              "id": "MONTHLY",
+              "value": 6,
+              "name": "Monthly",
+              "code": "MT"
+            }
+          ],
+          "value": 6,
+          "code": "MT"
+        },
+        "financialSource": {
+          "id": "6d9b5807-2e88-44ec-9c48-74221a932ae0",
+          "version": null,
+          "userCreated": null,
+          "userModified": null,
+          "dateCreated": null,
+          "dateModified": null,
+          "sourceCode": "OANDA",
+          "isSourceStandard": false,
+          "name": null,
+          "comments": null,
+          "currency": null,
+          "defaultAggregationMethod": null,
+          "validity": null
+        },
+        "offset": {
+          "id": "PREVIOUS",
+          "value": -1,
+          "name": "-1",
+          "description": "Previous"
+        }
+      },
+      "continuous": true,
+      "billingPoint": {
+        "id": "OUT"
+      },
+      "validity": {
+        "from": "2021-01-01",
+        "to": "2023-03-19"
+      },
+      "definitions": [
+        {
+          "id": "b731b0dd-57b8-4d97-9abf-013e5857a6ea",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-01-19 12:31",
+          "dateModified": "2023-01-19 12:31",
+          "rate": {
+            "name": "Management Fee"
+          },
+          "calculation": {
+            "measure": {
+              "id": "GROUND_RECORD",
+              "hasUnit": true,
+              "unitType": {
+                "id": "GRH",
+                "name": "GRH",
+                "description": "Ground handling service unit",
+                "value": 11
+              },
+              "value": "Handling service",
+              "type": {
+                "id": "HANDLING",
+                "value": "Ground handling"
+              },
+              "hasRounding": true,
+              "description": "Used to calculate a cost for a given actual ground event (service)"
+            },
+            "unit": {
+              "id": "fb323c94-d3f0-4856-ac8b-0ac610e868b5",
+              "version": null,
+              "userCreated": null,
+              "userModified": null,
+              "dateCreated": null,
+              "dateModified": null,
+              "code": "PEV",
+              "name": "Per Event",
+              "type": {
+                "id": "GRH",
+                "name": "GRH",
+                "description": "Ground handling service unit",
+                "value": 11
+              },
+              "factor": null,
+              "validity": null
+            },
+            "rounding": null,
+            "factor": 1,
+            "ponderationPower": 1,
+            "multipliers": [],
+            "basedOn": []
+          },
+          "conditions": [],
+          "parameters": [],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-01",
+                "to": "2024-05-31"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Management Fee"
+                  },
+                  "amount": 5000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "priceTiers": [
+        {
+          "id": "8f020814-8162-4e1e-bec3-6668bb71b265",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-01-19 12:31",
+          "dateModified": "2023-01-19 12:31",
+          "name": "QFA Management",
+          "conditions": [
+            {
+              "measure": {
+                "id": "CUSTOMER_REPORTED",
+                "value": "Customer (reported)",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's customer entity (reported)",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "QFA",
+              "value2": null
+            }
+          ],
+          "parameters": [],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-01",
+                "to": "2023-03-19"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Management Fee"
+                  },
+                  "amount": 5000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7fc8076-81f9-4f58-b34b-8a586c6f83f8",
+          "version": 0,
+          "userCreated": "dp@fuelplus.com",
+          "userModified": "dp@fuelplus.com",
+          "dateCreated": "2023-01-19 12:31",
+          "dateModified": "2023-01-19 12:31",
+          "name": "QFA Everyone",
+          "conditions": [
+            {
+              "measure": {
+                "id": "CUSTOMER_REPORTED",
+                "value": "Customer (reported)",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's customer entity (reported)",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": null,
+              "timeBasis": null,
+              "rounding": null,
+              "operator": {
+                "id": "NOT_EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "!=",
+                "name": "Not equal"
+              },
+              "value": "QFA",
+              "value2": null
+            }
+          ],
+          "parameters": [],
+          "pricing": [
+            {
+              "validity": {
+                "from": "2021-01-01",
+                "to": "2023-03-19"
+              },
+              "rates": [
+                {
+                  "rate": {
+                    "name": "Management Fee"
+                  },
+                  "amount": 9000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [],
+      "draft": true,
+      "status": {
+        "id": "DRAFT"
+      }
+    }
+  ],
+  "costElement": [
+    {
+      "id": "0dd2253a-6665-4ca2-b946-2d2de615c2b8",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "ANIMALDISINFECT",
+      "name": "C & D (Animal Disinfectant)",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "6c041a4c-b903-4bc4-a947-411a825814cc",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "ANIMALHNDL",
+      "name": "Animal Handling",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "150011e3-9bb2-40d6-a243-c48efdb60bbd",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "ARO",
+      "name": "Aircraft Remains Overnite (RON)",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "ac55d499-8000-44b2-ae92-ac086d09c201",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "AUTOCHECKIN",
+      "name": "Automated Check-in",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "ecee89c4-2e54-40dd-ba76-c3d14ccf40e9",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "CrgMaterial",
+      "name": "Cargo Material",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2010-01-01",
+        "to": "2099-12-31"
+      }
+    },
+    {
+      "id": "d14f7c74-6201-4c19-8aba-0c176a29155f",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "CustManifest",
+      "name": "Customs Manifest",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2010-01-01",
+        "to": "2022-05-12"
+      }
+    },
+    {
+      "id": "8e89a905-b27c-4f76-969d-fdfd937a30ac",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "DEPARTURELVANML",
+      "name": "Departure (live animal flight)",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "4abd8a0a-4926-40b2-b5a5-28a91a25b009",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "LOADMASTERFEE",
+      "name": "Loadmaster Fees",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "0f6a96db-625d-44bf-ae1e-a1c7c70baece",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "Mail Handling",
+      "name": "Mail Handling",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2019-01-01",
+        "to": "2099-12-31"
+      }
+    },
+    {
+      "id": "1fbedc6f-990a-42a2-985a-da479619fe9c",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MAILSECURITY",
+      "name": "Mail Security",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "5a3aac0c-f406-4829-aa18-8c902c496ee9",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MailSvc",
+      "name": "Mail Service",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2010-01-01",
+        "to": "2099-12-31"
+      }
+    },
+    {
+      "id": "b7c67502-204c-46cb-9ae3-e78371f4c34b",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "mailtransfer",
+      "name": "Line Haul/Transfer Rate - Mail",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": "",
+      "objectAccount": "",
+      "validity": {
+        "from": "2022-01-01",
+        "to": "2022-05-12"
+      }
+    },
+    {
+      "id": "6aca3d4b-3d7c-447a-bbd9-4bcdbfe1e711",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MARSHALLING",
+      "name": "Marshalling",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "3e3ab95c-48cd-4c7e-81b5-46165ae80e98",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MDL",
+      "name": "Main Deck Loader (MDL)",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "0d91ce26-6264-4da1-988e-922d85e9c245",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MDL18-30",
+      "name": "Main Deck Loader 18-30 Tons",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "33e24110-a522-4f5d-bde4-dc737ed5e98c",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MDL6-7",
+      "name": "Main Deck Loader 6-7 Tons",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "a53b412f-6397-491e-bebe-ad7cdce0fe73",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MEC",
+      "name": "Major Effort Cleaning (MEC)",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "311a0c1e-68b4-433b-9900-78fb6cb8b18a",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MGMTFEE",
+      "name": "Management Fee",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "2c3a99d5-f156-4965-8831-b2a1a4e7f51d",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "PALLETDISMNTL",
+      "name": "Pallet/Stall Dismanstle",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    },
+    {
+      "id": "5fd96ca1-12bf-4db6-a2aa-c3366144bcf7",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "SmlPESheets",
+      "name": "Small PE Sheets",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2010-01-01",
+        "to": "2099-12-31"
+      }
+    },
+    {
+      "id": "b299a223-9570-4314-a87b-c6ade848d938",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "TowMX",
+      "name": "Towing to/from Maintenance Bay",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2010-01-01",
+        "to": "2099-12-31"
+      }
+    },
+    {
+      "id": "c147aaa1-0c06-4831-ae1c-e0dc567eb327",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "VACCOOLMDU",
+      "name": "Vacuum Cooling (Main Deck Units)",
+      "type": {
+        "id": "GROUND_HANDLING",
+        "value": "Ground handling"
+      },
+      "costGroupId": "43e007be-f630-42e7-8d84-bdde9da09d61",
+      "costGroupCode": "GH",
+      "businessUnit": null,
+      "accruedLiabilityAccount": null,
+      "objectAccount": null,
+      "validity": {
+        "from": "2021-12-30",
+        "to": null
+      }
+    }
+  ],
+  "currency": [
+    {
+      "currencyCode": "EEK",
+      "numericCode": 233,
+      "defaultFractionDigits": 2
+    },
+    {
+      "currencyCode": "EGP",
+      "numericCode": 818,
+      "defaultFractionDigits": 2
+    },
+    {
+      "currencyCode": "ERN",
+      "numericCode": 232,
+      "defaultFractionDigits": 2
+    },
+    {
+      "currencyCode": "ESP",
+      "numericCode": 724,
+      "defaultFractionDigits": 0
+    },
+    {
+      "currencyCode": "ETB",
+      "numericCode": 230,
+      "defaultFractionDigits": 2
+    },
+    {
+      "currencyCode": "EUR",
+      "numericCode": 978,
+      "defaultFractionDigits": 2
+    }
+  ]
+}
