@@ -20,7 +20,7 @@ const PriceComponent = ({ params: { priceComponentID } }: PageProps) => {
                 id: ""
             },
             currency: {
-                id:""
+                id: ""
             },
             definitions: [],
             validity: {
@@ -43,7 +43,7 @@ const PriceComponent = ({ params: { priceComponentID } }: PageProps) => {
     }, [])
     return (
         <div>
-            <PriceComponentContext.Provider value={{ data, setData }}>
+            <PriceComponentContext.Provider value={{ data, setData, savePriceComponent: onSave }}>
                 <button className='btn btn-primary' onClick={() => onSave()}>Save</button>
                 <div className="accordion" id="accordionExample">
                     <div className="accordion-item">

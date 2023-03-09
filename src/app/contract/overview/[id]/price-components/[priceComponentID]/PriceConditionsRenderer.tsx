@@ -13,7 +13,6 @@ const PriceConditionsRenderer = ({ conditions }: PageProps) => {
     function calculateConditions(conditions: Array<TPriceCondition>) {
         let string: string[] = [];
         if (conditions) {
-            console.log(conditions)
             conditions.forEach((p: any) => {
                 if (p.measure && p.operator && p.value) {
                     if (p.operator.id === "IN" || p.operator.id === "NOT_IN") {

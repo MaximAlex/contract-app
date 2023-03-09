@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { unique_key } from "@/utils/unique_key";
+import { useEffect, useRef, useState } from "react";
 import styles from './lov-component.module.css';
 interface PageProps {
     requestMethod: Function;
@@ -16,10 +17,10 @@ export default function LovComponent(props: PageProps) {
     const [searchText, setSearchText] = useState("");
     const [results, setResults] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(false);
-    console.log("searText", searchText,props.label)
+    const inputRef = useRef<HTMLInputElement>(null);
 
 
-    async function getData(value: string) {
+    async function getData(value: string = "") {
         let response = await props.requestMethod(value);
         let data = await response.json();
         setResults(data);
@@ -49,10 +50,25 @@ export default function LovComponent(props: PageProps) {
         return "";
     }
     function onBlur() {
-        console.log(onBlur);
         setTimeout(() => {
-            setShowSuggestions(false)
-        }, 500)
+            const input = inputRef.current;
+            if (!(input && document.activeElement === input)) {
+                setShowSuggestions(false)
+            }
+        }, 200)
+    }
+    function onKeydown(e: KeyboardEvent) {
+        if (e.key === 'ArrowDown') {
+            getData();
+
+        }
+    }
+    function onArrowDownClick() {
+        const input = inputRef.current;
+        if (input) {
+            input.focus();
+        }
+        getData("");
     }
     useEffect(() => {
         getTextValue()
@@ -64,14 +80,19 @@ export default function LovComponent(props: PageProps) {
                 <input type="text" value={searchText} className="form-control"
                     onChange={e => onSearchChange(e.target.value)}
                     onBlur={() => onBlur()}
+                    onKeyDown={(e) => onKeydown(e)}
+                    ref={inputRef}
                     required={props.required ? props.required : false}
                     disabled={props.disabled ? props.disabled : false}
                 />
+                <a className={styles.arrowDown} onClick={() => onArrowDownClick()}>
+                    <i className={" bi bi-arrow-down"}></i>
+                </a>
                 {
                     showSuggestions ? (
                         <ul className={styles.suggestions}>
                             {results && results.map((data: any) => (
-                                <li className={styles.suggestionsItem} key={data.id} onClick={() => selectItem(data)}>{displayItem(data)}</li>
+                                <li className={styles.suggestionsItem} key={data.id || unique_key()} onClick={() => selectItem(data)}>{displayItem(data)}</li>
                             ))
                             }
                         </ul>

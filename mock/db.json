@@ -115,17 +115,17 @@
         "id": "DRAFT"
       },
       "counterparty": {
-        "id": "1b7e760f-e523-4270-a97b-437b516b1ed0",
+        "id": "0715a9d0-f3a1-4b76-bcde-feb9cec2fa79",
         "version": 0,
-        "userCreated": "ibalint@fuelplu",
-        "userModified": "ibalint@fuelplu",
-        "dateCreated": "2023-02-13 00:00",
-        "dateModified": "2023-02-13 00:00",
-        "code": "DLH",
-        "name": "Deutsche Lufthansa",
+        "userCreated": "1",
+        "userModified": null,
+        "dateCreated": "2022-03-15 00:00",
+        "dateModified": null,
+        "code": "DG",
+        "name": "Starbroker Ltd",
         "supplierCode2": null,
         "supplierCode3": null,
-        "isContractHolder": true,
+        "isContractHolder": false,
         "isCounterParty": true,
         "isAviationAuthority": false,
         "isAirportOperator": false,
@@ -137,17 +137,17 @@
         "isGroundHandler": false,
         "doAccounting": false,
         "validityPeriod": {
-          "from": "2007-01-01",
-          "to": "2023-02-13"
+          "from": "2017-09-01",
+          "to": "2099-12-31"
         },
         "isUsedInForecast": false,
         "isSystem": false,
-        "clientCode": null,
-        "airlineCode2": "DL",
-        "airlineCode3": "DLH",
+        "clientCode": "5Y",
+        "airlineCode2": "DG",
+        "airlineCode3": "DGF",
         "companyGroupCode": null,
         "companyGroupId": null,
-        "contactCount": 1
+        "contactCount": 0
       },
       "holder": {
         "id": "9c21db2e-0f57-4027-a4e4-f74b0b21f0ca",
@@ -349,6 +349,63 @@
         "name": "Lufthansa"
       },
       "id": "lpO8Af7"
+    },
+    {
+      "code": "test220202",
+      "counterparty": {
+        "id": "1b7e760f-e523-4270-a97b-437b516b1ed0",
+        "version": 0,
+        "userCreated": "ibalint@fuelplu",
+        "userModified": "ibalint@fuelplu",
+        "dateCreated": "2023-02-13 00:00",
+        "dateModified": "2023-02-13 00:00",
+        "code": "DLH",
+        "name": "Deutsche Lufthansa",
+        "supplierCode2": null,
+        "supplierCode3": null,
+        "isContractHolder": true,
+        "isCounterParty": true,
+        "isAviationAuthority": false,
+        "isAirportOperator": false,
+        "isBroker": false,
+        "isCustomer": true,
+        "isIntoPlaneAgent": false,
+        "isSupplier": false,
+        "isAirline": true,
+        "isGroundHandler": false,
+        "doAccounting": false,
+        "validityPeriod": {
+          "from": "2007-01-01",
+          "to": "2023-02-13"
+        },
+        "isUsedInForecast": false,
+        "isSystem": false,
+        "clientCode": null,
+        "airlineCode2": "DL",
+        "airlineCode3": "DLH",
+        "companyGroupCode": null,
+        "companyGroupId": null,
+        "contactCount": 1
+      },
+      "holder": {
+        "id": "7c9c0e30-9002-496d-9fb2-420884e3ebf5",
+        "version": null,
+        "userCreated": null,
+        "userModified": null,
+        "dateCreated": null,
+        "dateModified": null,
+        "code": "YKK",
+        "name": "test company IB",
+        "supplierCode2": null,
+        "supplierCode3": null,
+        "airlineCode2": "YK",
+        "airlineCode3": "YKK"
+      },
+      "validityPeriod": {
+        "from": "2023-02-01",
+        "to": "2023-02-28"
+      },
+      "id": "81OYiSP"
     }
   ],
   "counterparty": [
@@ -996,14 +1053,14 @@
               "description": "Used to calculate a cost for a given actual ground event (service)"
             },
             "unit": {
-              "id": "fb323c94-d3f0-4856-ac8b-0ac610e868b5",
+              "id": "4aeed6e5-41c0-4d97-a1fd-b3dc22decc0d",
               "version": null,
               "userCreated": null,
               "userModified": null,
               "dateCreated": null,
               "dateModified": null,
-              "code": "PEV",
-              "name": "Per Event",
+              "code": "PFLT",
+              "name": "Per Flight",
               "type": {
                 "id": "GRH",
                 "name": "GRH",
@@ -1013,10 +1070,87 @@
               "factor": null,
               "validity": null
             },
-            "rounding": null,
+            "rounding": {
+              "precision": 1,
+              "roundingMode": "HALF_EVEN"
+            },
             "factor": 1,
             "ponderationPower": 1,
-            "multipliers": [],
+            "multipliers": [
+              {
+                "measure": {
+                  "id": "AIRCRAFT_WINGSPAN",
+                  "value": "Aircraft Wingspan",
+                  "type": {
+                    "id": "AIRCRAFT",
+                    "value": "Aircraft"
+                  },
+                  "hasRounding": true,
+                  "description": "Specifies the wingspan of the aircraft used to operate the flight",
+                  "hasUnit": true,
+                  "measureInputType": {
+                    "id": "INPUT"
+                  },
+                  "hasBaseTime": false,
+                  "unitType": {
+                    "id": "LEN",
+                    "name": "Len",
+                    "description": "Length",
+                    "value": 7
+                  }
+                },
+                "unit": {
+                  "id": "f13e0624-ade6-429b-b729-0636fed6bc5a",
+                  "version": null,
+                  "userCreated": null,
+                  "userModified": null,
+                  "dateCreated": null,
+                  "dateModified": null,
+                  "code": "MLT",
+                  "name": "Million Litres",
+                  "type": {
+                    "id": "MASS",
+                    "name": "Mass",
+                    "description": "Mass",
+                    "value": 1
+                  },
+                  "factor": null,
+                  "validity": null
+                },
+                "rounding": {
+                  "precision": "1",
+                  "roundingMode": "UP"
+                },
+                "factor": 1,
+                "ponderationPower": 1,
+                "multipliers": [
+                  {
+                    "measure": {
+                      "id": "AIRCRAFT_MGLW",
+                      "value": "Aircraft MLGW",
+                      "type": {
+                        "id": "AIRCRAFT",
+                        "value": "Aircraft"
+                      },
+                      "hasRounding": true,
+                      "description": "Specifies the Maximum Landing Gross Weight of the aircraft used to operate the flight",
+                      "hasUnit": true,
+                      "measureInputType": {
+                        "id": "INPUT"
+                      },
+                      "hasBaseTime": false,
+                      "unitType": {
+                        "id": "MASS",
+                        "name": "Mass",
+                        "description": "Mass",
+                        "value": 1
+                      }
+                    }
+                  }
+                ],
+                "basedOn": []
+              }
+            ],
             "basedOn": []
           },
           "conditions": [
@@ -1037,9 +1171,35 @@
                 "hasBaseTime": false,
                 "unitType": null
               },
-              "unit": null,
-              "timeBasis": null,
-              "rounding": null,
+              "unit": {
+                "id": "017952e2-4e4a-4dbf-bf52-b4d95fc7a30b",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "KG",
+                "name": "Kilograms",
+                "type": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "factor": null,
+                "validity": null
+              },
+              "timeBasis": {
+                "id": "LOCAL_TIME",
+                "value": "Local time"
+              },
+              "rounding": {
+                "mode": {
+                  "code": "UP",
+                  "name": "UP"
+                },
+                "precision": "1"
+              },
               "operator": {
                 "id": "EQUAL",
                 "measureInputTypes": [
@@ -1053,8 +1213,8 @@
                 "code": "=",
                 "name": "Equal"
               },
-              "value": "C",
-              "value2": null
+              "value": "1",
+              "value2": "2"
             },
             {
               "measure": {
@@ -1120,6 +1280,69 @@
           ],
           "parameters": [
             {
+              "measure": {
+                "id": "AIRCRAFT_WEIGHT_CLASS_FAA",
+                "value": "Aircraft weight class (FAA)",
+                "type": {
+                  "id": "AIRCRAFT",
+                  "value": "Aircraft"
+                },
+                "hasRounding": false,
+                "description": "Specifies weight class (FAA) of the aircraft used to operate the flight",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": {
+                "id": "017952e2-4e4a-4dbf-bf52-b4d95fc7a30b",
+                "version": null,
+                "userCreated": null,
+                "userModified": null,
+                "dateCreated": null,
+                "dateModified": null,
+                "code": "KG",
+                "name": "Kilograms",
+                "type": {
+                  "id": "MASS",
+                  "name": "Mass",
+                  "description": "Mass",
+                  "value": 1
+                },
+                "factor": null,
+                "validity": null
+              },
+              "rounding": {
+                "mode": {
+                  "code": "UP",
+                  "name": "UP"
+                },
+                "scale": 0,
+                "precision": "3"
+              },
+              "operator": {
+                "id": "IN",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "in",
+                "name": "In"
+              },
+              "start": "1",
+              "limit": "3",
+              "type": {
+                "id": "QUANTITY_FILTER",
+                "value": "Quantity filter"
+              }
+            },
+            {
               "type": {
                 "id": "QUANTITY_FILTER",
                 "value": "Quantity filter"
@@ -1159,9 +1382,30 @@
                 "factor": null,
                 "validity": null
               },
-              "rounding": null,
-              "start": null,
-              "limit": null
+              "rounding": {
+                "precision": "3",
+                "mode": {
+                  "code": "UP",
+                  "name": "UP"
+                }
+              },
+              "start": "12",
+              "limit": "12",
+              "operator": {
+                "id": "EQUAL",
+                "measureInputTypes": [
+                  {
+                    "id": "INPUT"
+                  },
+                  {
+                    "id": "LOV"
+                  }
+                ],
+                "code": "=",
+                "name": "Equal"
+              },
+              "value": "12",
+              "value2": "12"
             }
           ],
           "pricing": [
@@ -1177,7 +1421,8 @@
                   },
                   "amount": 310
                 }
-              ]
+              ],
+              "amount": "1"
             }
           ]
         }
@@ -1192,6 +1437,33 @@
           "dateModified": "2023-01-19 12:31",
           "name": "QFA Management",
           "conditions": [
+            {
+              "measure": {
+                "id": "CUSTOMER",
+                "value": "Customer",
+                "type": {
+                  "id": "FLIGHT",
+                  "value": "Flight"
+                },
+                "hasRounding": false,
+                "description": "Specifies flight's customer entity ",
+                "hasUnit": false,
+                "measureInputType": {
+                  "id": "LOV"
+                },
+                "hasBaseTime": false,
+                "unitType": null
+              },
+              "unit": "",
+              "timeBasis": "",
+              "rounding": {
+                "mode": {},
+                "scale": 0
+              },
+              "operator": {},
+              "value": "",
+              "value2": ""
+            },
             {
               "measure": {
                 "id": "CUSTOMER_REPORTED",
@@ -2833,6 +3105,1002 @@
       "currencyCode": "EUR",
       "numericCode": 978,
       "defaultFractionDigits": 2
+    }
+  ],
+  "measure": [
+    {
+      "id": "AIRCRAFT_MGLW",
+      "value": "Aircraft MLGW",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": true,
+      "description": "Specifies the Maximum Landing Gross Weight of the aircraft used to operate the flight",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      }
+    },
+    {
+      "id": "AIRCRAFT_MTOW",
+      "value": "Aircraft MTOW",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": true,
+      "description": "Specifies the Maximum Takeoff Weight of the aircraft used to operate the flight",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      }
+    },
+    {
+      "id": "AIRCRAFT_WINGSPAN",
+      "value": "Aircraft Wingspan",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": true,
+      "description": "Specifies the wingspan of the aircraft used to operate the flight",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "LEN",
+        "name": "Len",
+        "description": "Length",
+        "value": 7
+      }
+    },
+    {
+      "id": "AIRCRAFT_EQUIPMENT",
+      "value": "Aircraft equipment",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies the equipment (operational aircraft type) of the aircraft used to operate the flight",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "AIRCRAFT_REGISTRATION",
+      "value": "Aircraft registration",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies the registration of the aircraft used to operate the flight",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "AIRCRAFT_TYPE",
+      "value": "Aircraft type",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies the type of the aircraft used to operate the flight",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "AIRCRAFT_WEIGHT_CLASS_FAA",
+      "value": "Aircraft weight class (FAA)",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies weight class (FAA) of the aircraft used to operate the flight",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "AIRCRAFT_WEIGHT_CLASS_ICAO",
+      "value": "Aircraft weight class (ICAO)",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies weight class (ICAO) of the aircraft used to operate the flight",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "AIRCRAFT_AIRFRAME",
+      "value": "Airframe type",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies whether the flight is operated with a wide-body or narrow-body aircraft",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "ARRIVAL_AIRPORT",
+      "value": "Arrival airport",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's arrival airport",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "ARRIVAL_COUNTRY",
+      "value": "Arrival country",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's arrival country",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "ARRIVAL_DATE",
+      "value": "Arrival date",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's arrival date",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "CUSTOMER",
+      "value": "Customer",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's customer entity ",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "CUSTOMER_FINAL",
+      "value": "Customer (final)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's customer entity (final)",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "CUSTOMER_PAYING",
+      "value": "Customer (paying)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's customer entity (paying)",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "CUSTOMER_REPORTED",
+      "value": "Customer (reported)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's customer entity (reported)",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "DEPARTURE_AIRPORT",
+      "value": "Departure airport",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's departure airport",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "DEPARTURE_COUNTRY",
+      "value": "Departure country",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's departure country",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "DEPARTURE_DATE",
+      "value": "Departure date",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's departure date",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "DOM_INT",
+      "value": "Dom/Int flag",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's Dom/Int flag (Domestic, International)",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "FLIGHT_DATE",
+      "value": "Flight date",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's flight date",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "FLIGHT_TYPE",
+      "value": "Flight type",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's flight type",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "SERVICE_NAME",
+      "value": "Handling service (name)",
+      "type": {
+        "id": "HANDLING",
+        "value": "Ground handling"
+      },
+      "hasRounding": false,
+      "description": "Specifies the ground handling service name",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "SERVICE_QUANTITY_TYPE",
+      "value": "Handling service (quantity type)",
+      "type": {
+        "id": "HANDLING",
+        "value": "Ground handling"
+      },
+      "hasRounding": false,
+      "description": "Specifies the ground handling service quantity type",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "SERVICE_QUANTITY",
+      "value": "Handling service (quantity)",
+      "type": {
+        "id": "HANDLING",
+        "value": "Ground handling"
+      },
+      "hasRounding": false,
+      "description": "Specifies the ground handling service quantity",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "FLIGHT_LANDING_TIME",
+      "value": "Landing time",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's landing time",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": true,
+      "unitType": null
+    },
+    {
+      "id": "AIRCRAFT_NOISE_CERTIFICATION",
+      "value": "Noise certification",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies the noise certification of the aircraft used to operate the flight",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "NOISE_RATE",
+      "value": "Noise level",
+      "type": {
+        "id": "AIRCRAFT",
+        "value": "Aircraft"
+      },
+      "hasRounding": false,
+      "description": "Specifies the aircraft noise level is in the specified range (departure or approach, depending on the case)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "SPL",
+        "name": "SPL",
+        "description": "Sound pressure level",
+        "value": 8
+      }
+    },
+    {
+      "id": "FLIGHT_OFFBLOCK_TIME",
+      "value": "Offblock time",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's offblock time",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": true,
+      "unitType": null
+    },
+    {
+      "id": "FLIGHT_ONBLOCK_TIME",
+      "value": "Onblock time",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's onblock time",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": true,
+      "unitType": null
+    },
+    {
+      "id": "OVERFLIGHT_COUNTRY",
+      "value": "Overflown country",
+      "type": {
+        "id": "OVERFLIGHT",
+        "value": "Overflight"
+      },
+      "hasRounding": false,
+      "description": "Lists the flight's overflown countries",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "OVERFLIGHT_WAYPOINT",
+      "value": "Overflown waypoint",
+      "type": {
+        "id": "OVERFLIGHT",
+        "value": "Overflight"
+      },
+      "hasRounding": false,
+      "description": "Lists the flight's overflown waypoints",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "PARKING_POSITION",
+      "value": "Parking position",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's parking position",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "FLIGHT_PARKING_TIME",
+      "value": "Parking time",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies the parking time (duration)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "DUR",
+        "name": "Dur",
+        "description": "Duration",
+        "value": 6
+      }
+    },
+    {
+      "id": "PAX_CHILDREN",
+      "value": "Passengers (children)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies the number of passengers (children)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "EV",
+        "name": "Ev",
+        "description": "Event",
+        "value": 4
+      }
+    },
+    {
+      "id": "PAX_FEMALE",
+      "value": "Passengers (female)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies the number of passengers (female)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "EV",
+        "name": "Ev",
+        "description": "Event",
+        "value": 4
+      }
+    },
+    {
+      "id": "PAX_INFANTS",
+      "value": "Passengers (infants)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies the number of passengers (infants)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "EV",
+        "name": "Ev",
+        "description": "Event",
+        "value": 4
+      }
+    },
+    {
+      "id": "PAX_MALE",
+      "value": "Passengers (male)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies the number of passengers (male)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "EV",
+        "name": "Ev",
+        "description": "Event",
+        "value": 4
+      }
+    },
+    {
+      "id": "PAX_TOTAL",
+      "value": "Passengers (total)",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies the number of passengers (total)",
+      "hasUnit": true,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": false,
+      "unitType": {
+        "id": "EV",
+        "name": "Ev",
+        "description": "Event",
+        "value": 4
+      }
+    },
+    {
+      "id": "PAYLOAD_TYPE",
+      "value": "Payload type",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's payload type",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "SERVICE_TYPE",
+      "value": "Service type",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's service type",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "LOV"
+      },
+      "hasBaseTime": false,
+      "unitType": null
+    },
+    {
+      "id": "FLIGHT_TAKEOFF_TIME",
+      "value": "Takeoff time",
+      "type": {
+        "id": "FLIGHT",
+        "value": "Flight"
+      },
+      "hasRounding": false,
+      "description": "Specifies flight's takeoff time",
+      "hasUnit": false,
+      "measureInputType": {
+        "id": "INPUT"
+      },
+      "hasBaseTime": true,
+      "unitType": null
+    }
+  ],
+  "unit": [
+    {
+      "id": "017952e2-4e4a-4dbf-bf52-b4d95fc7a30b",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "KG",
+      "name": "Kilograms",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    },
+    {
+      "id": "afb8453d-f7d4-4f4a-af74-ad6c2e695bdc",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "LB",
+      "name": "Pounds",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    },
+    {
+      "id": "f13e0624-ade6-429b-b729-0636fed6bc5a",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "MLT",
+      "name": "Million Litres",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    },
+    {
+      "id": "ccb51924-cba3-41d5-951a-657e9a869186",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "TL",
+      "name": "Thousand Pounds",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    },
+    {
+      "id": "4bad230a-1e3f-429d-9e08-73fa135d3d40",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "TO",
+      "name": "Metric Tons",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    },
+    {
+      "id": "10fc9f0a-98ee-4dfb-8b39-ba55f6cd9ac6",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "TST",
+      "name": "Test",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    },
+    {
+      "id": "5801c183-4377-47a7-8476-eda8ed76a9fc",
+      "version": null,
+      "userCreated": null,
+      "userModified": null,
+      "dateCreated": null,
+      "dateModified": null,
+      "code": "TT",
+      "name": "Thousand Metric Tons",
+      "type": {
+        "id": "MASS",
+        "name": "Mass",
+        "description": "Mass",
+        "value": 1
+      },
+      "factor": null,
+      "validity": null
+    }
+  ],
+  "timeBasis": [
+    {
+      "id": "LOCAL_TIME",
+      "value": "Local time"
+    },
+    {
+      "id": "UTC",
+      "value": "UTC"
+    }
+  ],
+  "rounding": [
+    {
+      "code": "UP",
+      "name": "UP"
+    },
+    {
+      "code": "DOWN",
+      "name": "DOWN"
+    },
+    {
+      "code": "CEILING",
+      "name": "CEILING"
+    },
+    {
+      "code": "FLOOR",
+      "name": "FLOOR"
+    },
+    {
+      "code": "HALF_UP",
+      "name": "HALF_UP"
+    },
+    {
+      "code": "HALF_DOWN",
+      "name": "HALF_DOWN"
+    },
+    {
+      "code": "HALF_EVEN",
+      "name": "HALF_EVEN"
+    }
+  ],
+  "operator": [
+    {
+      "id": "EQUAL",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        },
+        {
+          "id": "LOV"
+        }
+      ],
+      "code": "=",
+      "name": "Equal"
+    },
+    {
+      "id": "GREATER_THAN",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        }
+      ],
+      "code": ">",
+      "name": "Greater than"
+    },
+    {
+      "id": "GREATER_THAN_OR_EQUAL",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        }
+      ],
+      "code": ">=",
+      "name": "Greater than or equal"
+    },
+    {
+      "id": "IN",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        },
+        {
+          "id": "LOV"
+        }
+      ],
+      "code": "in",
+      "name": "In"
+    },
+    {
+      "id": "LESS_THAN",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        }
+      ],
+      "code": "<",
+      "name": "Less than"
+    },
+    {
+      "id": "LESS_THAN_OR_EQUAL",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        }
+      ],
+      "code": "<=",
+      "name": "Less than or equal"
+    },
+    {
+      "id": "NOT_EQUAL",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        },
+        {
+          "id": "LOV"
+        }
+      ],
+      "code": "!=",
+      "name": "Not equal"
+    },
+    {
+      "id": "NOT_IN",
+      "measureInputTypes": [
+        {
+          "id": "INPUT"
+        },
+        {
+          "id": "LOV"
+        }
+      ],
+      "code": "not in",
+      "name": "Not in"
+    }
+  ],
+  "paramter-type": [
+    {
+      "id": "QUANTITY_FILTER",
+      "value": "Quantity filter"
+    },
+    {
+      "id": "TIME_FILTER",
+      "value": "Time filter"
     }
   ]
 }

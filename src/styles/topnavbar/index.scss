@@ -1,0 +1,19 @@
+$topnavbar-bg: #172938;
+
+.topnavbar {
+    background: $topnavbar-bg;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+    .menu-toggle {
+        background-color: $primary-color;
+        padding: 10px;
+    
+        i {
+            color: $topnavbar-bg;
+        }
+    }
+    .logo{
+        margin-top: 5px;
+    }
+}

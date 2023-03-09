@@ -1,0 +1,35 @@
+.btn.btn-primary {
+    >i {
+        color: $primary-color!important;
+        margin-right: 5px;
+    }
+
+}
+
+.btn.btn-danger {
+    >i {
+        color: $danger-color!important;
+        margin-right: 5px;
+    }
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    &:hover {
+        background-color: darken(#fff, 2)
+    }
+
+    &.btn-default,
+    &:not(.btn-danger),
+    &:not(.btn-primary) {
+        i {
+            color: $secondary-color;
+        }
+    }
+
+    &:not(:last-child) {
+        border-right: 1px solid #eaebee;
+    }
+}

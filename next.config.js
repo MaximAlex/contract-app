@@ -10,7 +10,10 @@ const nextConfig = {
         destination: 'http://localhost:3001/:path*' // Proxy to Backend
       }
     ]
-  }
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
 }
 
 module.exports = nextConfig

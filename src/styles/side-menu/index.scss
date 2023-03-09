@@ -1,0 +1,19 @@
+.side-menu {
+    border-right: 1px solid #eaebee;
+    padding-right: 20px;
+    box-shadow: 0 16px 24px 0 #0000001a;
+    min-width: 250px;
+    ul {
+        border: none;
+        list-style: none;
+
+        a {
+            padding: 7px 13px;
+            display: inline-block;
+            i{
+                color:$primary-color;
+                margin-right: 5px;
+            }
+        }
+    }
+}

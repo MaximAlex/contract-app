@@ -1,18 +1,33 @@
 .suggestions {
     max-width: 350px;
     background: white;
-    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-    border:1px solid #ccc;
-    position:absolute;
-    top:50px;
-    left:0px;
-    padding:10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50px;
+    max-height: 200px;
+    left: 0px;
+    padding: 10px;
     z-index: 10;
+    overflow: auto;
 }
+
 .suggestionsItem {
     cursor: pointer;
     list-style-type: none;
 }
-.dropdownContainer{
+
+.dropdownContainer {
     position: relative;
+}
+
+.arrowDown {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+
+.dropdownContainer:hover .arrowDown {
+    display: block;
 }

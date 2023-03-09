@@ -1,5 +1,6 @@
 'use client'
 import LovComponent from "@/components/lov-component";
+import Toolbar from "@/components/toolbar";
 import ContractService from "@/services/contract.service";
 import CounterpartyService from "@/services/counterparty.service";
 import HolderService from "@/services/holder.service";
@@ -19,8 +20,10 @@ export default function ContractDetail({ params: { id } }: PageProps) {
         event.preventDefault();
         if (id === '0') {
             const addedContract = await ContractService.add(contract)
+
         } else {
             let data = await ContractService.update(contract);
+
         }
     }
 
@@ -54,8 +57,10 @@ export default function ContractDetail({ params: { id } }: PageProps) {
     return (
         <>
             <form onSubmit={onSave}>
-                <Link type="button" className="btn btn-info" href={`contract/overview/${id}`}>Back</Link>
-                <button type="submit" className="btn btn-primary">Save</button>
+                <Toolbar>
+                    <Link type="button" className="btn btn-info" href={`contract/overview/${id}`}>Back</Link>
+                    <button type="submit" className="btn btn-primary">Save</button>
+                </Toolbar>
                 <div className="row">
                     <div className="col">
                         <div className="mb-3">

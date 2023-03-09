@@ -9,11 +9,13 @@ import PriceParametersRenderer from './PriceParamtersRenderer';
 
 const PriceDefinition = () => {
     const { data } = useContext(PriceComponentContext)
+    const [index, setIndex] = useState(-1);
     const [selectedRow, setSelectedRow] = useState({
         id: ""
     } as any);
-    function onRowClicked(d: Definition) {
+    function onRowClicked(d: Definition,index:number) {
         setSelectedRow(d);
+        setIndex(index);
     }
     return (
         <>
@@ -29,8 +31,8 @@ const PriceDefinition = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data && data.definitions?.map((d: Definition) => (
-                        <tr key={d.id} onClick={() => onRowClicked(d)}>
+                    {data && data.definitions?.map((d: Definition,index:number) => (
+                        <tr key={d.id} onClick={() => onRowClicked(d,index)}>
                             <td>{d.rate ? d.rate.name : ""}</td>
                             <td>
                                 <PriceDefinitionBasis calculation={d.calculation}></PriceDefinitionBasis>
@@ -50,7 +52,7 @@ const PriceDefinition = () => {
                 </tbody>
             </table>
             {selectedRow && selectedRow.id ? (
-                <PriceDefinitionOverview definition={selectedRow}></PriceDefinitionOverview>
+                <PriceDefinitionOverview definition={selectedRow} index={index}></PriceDefinitionOverview>
             ) : ("")}
         </>
     )

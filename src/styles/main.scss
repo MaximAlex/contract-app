@@ -1,0 +1,58 @@
+//fonts
+$font-family: 'Open Sans', sans-serif;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+
+/* Colors */
+$primary-color: #00D482;
+$secondary-color: #7D63AB;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+
+$mainTextColor: rgb(90 113 127);
+
+@import "./button/index.scss";
+@import "./topnavbar/index.scss";
+@import "./side-menu/index.scss";
+@import "./table/index.scss";
+
+.flex {
+    flex: 1;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: $mainTextColor;
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    outline: none;
+    color: $mainTextColor;
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+}
+.page-wrapper{
+    padding-left: 20px;
+}

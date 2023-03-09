@@ -449,18 +449,18 @@ export interface Rate2 {
     amount: number;
 }
 
-export interface Pricing {
-    validity: Validity3;
-    rates: Rate2[];
+export interface TPricing {
+    validity: TDatePeriod;
+    amount: any;
 }
 
 export interface Definition {
-    id?:string;
+    id?: string;
     rate?: Rate;
     calculation: TCalculation;
     conditions: Array<TPriceCondition>;
     parameters: Array<TPriceParamters>;
-    pricing?: Pricing[];
+    pricing?: TPricing[];
 }
 
 export interface Type5 {
@@ -527,8 +527,8 @@ export interface Pricing2 {
 export interface PriceTier {
     id: string;
     name: string;
-    conditions: Condition[];
-    parameters: any[];
+    conditions: Array<TPriceCondition>;
+    parameters: Array<TPriceParamters>;
     pricing: Pricing2[];
 }
 

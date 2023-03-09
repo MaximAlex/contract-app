@@ -1,18 +1,18 @@
 import { PriceComponentContext } from '@/contexts/price-components.context';
-import { Definition, PriceTier } from '@/types/price-component';
-import React, { useContext, useState } from 'react';
+import { PriceTier } from '@/types/price-component';
+import { useContext, useState } from 'react';
 import PriceConditionsRenderer from './PriceConditionsRenderer';
-import PriceDefinitionBasis from './PriceDefinitionBasis';
-import PriceDefinitionCalculation from './PriceDefinitionCalculation';
-import PriceDefinitionOverview from './PriceDefinitionOverview';
 import PriceParametersRenderer from './PriceParamtersRenderer';
+import PriceTierOverview from './PriceTierOverview';
 
 const PriceTiers = () => {
     const { data } = useContext(PriceComponentContext)
+    const [index, setIndex] = useState(-1);
     const [selectedRow, setSelectedRow] = useState({
         id: ""
     } as any);
-    function onRowClicked(d: PriceTier) {
+    function onRowClicked(d: PriceTier,index:number) {
+        setIndex(index);
         setSelectedRow(d);
     }
     return (
@@ -27,8 +27,8 @@ const PriceTiers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {data && data.priceTiers?.map((d: PriceTier) => (
-                        <tr key={d.id} onClick={() => onRowClicked(d)}>
+                    {data && data.priceTiers?.map((d: PriceTier,index:number) => (
+                        <tr key={d.id} onClick={() => onRowClicked(d,index)}>
                             <td>{d.name}</td>
                             <td>
                                 <PriceConditionsRenderer conditions={d.conditions}></PriceConditionsRenderer>
@@ -42,7 +42,7 @@ const PriceTiers = () => {
                 </tbody>
             </table>
             {selectedRow && selectedRow.id ? (
-                <PriceDefinitionOverview definition={selectedRow}></PriceDefinitionOverview>
+                <PriceTierOverview tier={selectedRow} index={index}></PriceTierOverview>
             ) : ("")}
         </>
     )

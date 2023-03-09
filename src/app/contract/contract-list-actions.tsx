@@ -9,14 +9,20 @@ interface PageProps {
 }
 export default function ContracListActions({ data }: PageProps) {
     const router = useRouter();
-    async function  onDelete() {
+    async function onDelete() {
         const deletedContract = await ContractService.delete(data.id);
         router.refresh();
     }
     return (
         <>
-            <Link href={'/contract/overview/' + data.id} className="btn btn-primary">Detail</Link>
-            <button onClick={() => onDelete()} className="btn btn-danger">Delete</button>
+            <Link href={'/contract/overview/' + data.id} className="btn btn-primary">
+                <i className="bi bi-info"></i>
+                Detail
+            </Link>
+            <button onClick={() => onDelete()} className="btn btn-danger">
+                <i className="bi bi-trash"></i>
+                Delete
+            </button>
         </>
     )
 }

@@ -3,5 +3,6 @@ import { createContext } from 'react';
 // Create a new context
 export const PriceComponentContext = createContext({} as {
     data: TPriceComponent,
-    setData: Function
+    setData: Function,
+    savePriceComponent: Function
 });

@@ -1,3 +1,4 @@
+import Toolbar from '@/components/toolbar';
 import ContractService from '@/services/contract.service';
 import { TContract } from '@/types/contract';
 import Link from 'next/link';
@@ -11,9 +12,11 @@ const ContractOverview = async ({ params: { id } }: PageProps) => {
     const contract: TContract = await response.json();
     return (
         <>
-            <Link type="button" className="btn btn-primary" href={`contract/${id}`}>
+            <Toolbar>
+                <Link type="button" className="btn btn-primary" href={`contract/${id}`}>
                     Edit
-            </Link>
+                </Link>
+            </Toolbar>
             <form>
                 <div className="row">
                     <div className="col">

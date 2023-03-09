@@ -21,7 +21,10 @@ export default async function ContracList() {
     return (
         <>
             <Toolbar>
-                <Link className="btn btn-primary" href={"contract/0"}>Add</Link>
+                <Link className="btn btn-primary" href={"contract/0"}>
+                    <i className="bi bi-plus-circle"></i>
+                    Add
+                </Link>
             </Toolbar>
             <Table columns={columns} data={contracts} actionsComponent={ContracListActions}>
                 {/* <ContracListActions contract={{id:"31232"}}></ContracListActions> */}
